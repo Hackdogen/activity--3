@@ -90,6 +90,7 @@ text-align: center;
     background-color: #242424;
     border-color:#3a3a3a;
     height:600px;
+    
 }
 
 .sec3 {
@@ -161,6 +162,17 @@ footer {
   flex-direction: column;
   background-color: #181818;
 
+}
+
+.socials {
+
+  color: white;
+
+}
+
+.socials:hover {
+
+  color:grey;
 }
 
   /* wide */
