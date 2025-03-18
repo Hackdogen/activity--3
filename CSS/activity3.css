@@ -1,0 +1,375 @@
+
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: #303030;
+    flex: 1;
+    
+  }
+
+   header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        height: 100px;
+        background-color: #181818;
+       position: sticky;top: 0;
+       backdrop-filter: blur(45px);
+       
+  } 
+
+  nav ul{
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+  }
+
+  button {
+        width: 80px;
+        height: 30px;
+        border: 1px solid #3a3a3a ;
+        color: white;
+        background-color: #181818;
+        cursor: pointer;
+        padding: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;  
+        margin: 2px;
+  }
+
+ 
+
+
+  
+  button:hover {
+    background-color: #333333; 
+    transform: scale(1.05); 
+}
+button:focus {
+color: rgba(192, 19, 19, 0.87);
+  
+
+}
+
+.sec1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+justify-content: center;
+text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: #242424;
+    border-color:#3a3a3a;
+    height:400px;
+}
+
+.c1, .c2, .c3{
+
+  background-color: grey;
+  height: 200px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.sec2, .sec4 {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    gap: 20px;
+    background-color: #242424;
+    border-color:#3a3a3a;
+    height:600px;
+}
+
+.sec3 {
+
+  display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   padding: 20px;
+   gap: 20px;
+   background-color: #242424;
+    border-color:#3a3a3a;
+    height:600px;
+}
+
+.sec4 {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 0;
+  padding: 20px;
+  gap: 20px;
+  background-color: #242424;
+   border-color:#3a3a3a;
+   height:600px;
+
+}
+
+.sec5 { 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #242424;
+  border-color:#3a3a3a;
+  height:600px;
+}
+
+.Tcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  gap: 10px;
+  text-align: center;
+
+}
+
+.T1 {
+
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+
+}
+
+footer {
+
+  height: 200px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #181818;
+
+}
+
+  /* wide */
+
+@media screen and (min-width: 1440px) {
+      body {
+
+        width: 100%;
+        
+      }
+      
+    .mobileBtn{
+
+      display: none;
+    }
+
+    .pagination{
+      display: none;
+    }
+
+  }
+
+  /* Desktop */
+
+  @media screen and (max-width: 1440px) {
+ 
+    body {
+
+      width: 100%;
+    }
+
+    .pagination{
+      display: none;
+    }
+  
+  }
+
+/* tablet */
+
+@media screen and (min-width: 1024px) {
+ 
+  body {
+
+      width: 100%;
+  }
+  .mobileBtn{
+
+    display: none;
+  }
+  .pagination{
+    display: none;
+  }
+}
+
+
+  /* tablet small  */
+
+  @media screen and (max-width: 744px) {
+  body {
+    width: 744px;
+  }
+
+  header {
+
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+
+  }
+  button{
+
+    width: 110px;
+    height: 50px;
+
+  }
+.sec2, .sec3, .sec4 {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.sec5 { 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  gap: 20px;
+  background-color: #242424;
+  border-color: #3a3a3a;
+  height: 600px;
+  padding-top: 20px; 
+}
+#S5T h2 {
+  font-size: 2rem;
+}
+.mobileBtn{
+ display: none;
+}
+
+.pagination{
+  display: none;
+}
+}
+
+  /* mobile */
+  
+  @media screen and (max-width: 375px) {
+
+    body {
+      display: flex;
+      flex-direction: column;
+      width: 375px;
+    } 
+
+   
+    img{
+
+        width: 300px;
+        height: 500px;
+    }
+    .cont1 {
+      background-color: #181818;
+      background: linear-gradient(to bottom, #222, #111);
+      border: 1px solid #444;
+      padding: 5px;
+      width: 345px;
+      height: 50%;
+      margin: 0;
+    }
+    .Tcontainer{
+      display: block;
+      gap: 0px 5px;
+
+    }
+
+    button {display: inline-block;}
+
+    .sec5 {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center; 
+      text-align: center;
+      height: 100vh; 
+      
+      padding: 20px; 
+    }
+    .pagination{
+      text-align: center;
+
+    }
+    
+    .pagination a{
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      padding:8px 15px;
+
+    }
+
+    .TS2, .TS3 {
+
+      display: none;
+
+    }
+
+    nav ul li {
+      display: none; 
+    }
+      .mobileBtn {
+        display: flex !important;
+       
+    }
+
+  }
+
+  .mobileBtn .MBtn{
+    background-color: #181818;
+    color: white;
+    padding: 15px 15px;
+    border: 1px solid #3a3a3a ;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;  
+    margin: 2px;
+}
+.mobileBtn  a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.mobileBtn  .MbtnC{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.mobileBtn :active .MbtnC{
+    display: block;
+}
+.mobileBtn :hover .MBtn{
+    background-color: hsl(0, 0%, 70%);
+}
+.mobileBtn  a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+  /*nde na kaya ng diskarte at toilet meditation hahaha JS nlng magbuhat sa dropdown menu*/
